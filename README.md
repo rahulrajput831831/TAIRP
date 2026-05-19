@@ -1,26 +1,101 @@
 # Twitter Sentiment Analysis using NLP, VADER, and RoBERTa
-<<<<<<< HEAD
 
 ## Project Overview
-This project analyzes public sentiment on demonetization-related tweets using Natural Language Processing (NLP) techniques. The project compares rule-based and transformer-based sentiment analysis models to classify tweets into positive, negative, and neutral sentiments.
+
+This project analyzes public sentiment on demonetization-related tweets using Natural Language Processing (NLP).
+
+Two sentiment analysis approaches were implemented:
+
+- VADER (Rule-Based Sentiment Analysis)
+- RoBERTa (Transformer-Based Sentiment Analysis)
+
+The project includes:
+- tweet preprocessing
+- exploratory data analysis
+- sentiment classification
+- comparative analysis
+- visualizations
+
+---
+
+## Project Structure
+
+Twitter-Sentiment-Analysis/
+
+├── data/
+
+├── notebooks/
+
+│ ├── 01_data_cleaning.ipynb
+
+│ ├── 02_eda.ipynb
+
+│ ├── 03_vader_analysis.ipynb
+
+│ ├── 04_roberta_analysis.ipynb
+
+│ └── 05_model_comparison.ipynb
+
+├── outputs/
+
+├── requirements.txt
+
+├── README.md
+
+└── .gitignore
+
+---
+
+## Workflow
+
+### 1 Data Cleaning
+- Remove URLs
+- Remove mentions
+- Remove hashtags
+- Tokenization
+- Stopword Removal
+- Lemmatization
+
+### 2 Exploratory Data Analysis
+- Tweet Length Analysis
+- Word Frequency
+- Word Cloud
+
+### 3 VADER Sentiment Analysis
+- Compound Score
+- Sentiment Classification
+
+### 4 RoBERTa Sentiment Analysis
+- Transformer Prediction
+- Batch Processing
+
+### 5 Model Comparison
+- Visualization
+- Performance Comparison
+
+---
 
 ## Technologies Used
+
 - Python
 - Pandas
-- NLTK
-- RoBERTa
+- NumPy
 - Matplotlib
 - Seaborn
+- NLTK
 - Transformers
+- PyTorch
 
-## Models Used
-- VADER Sentiment Analyzer
-- RoBERTa Transformer Model
+---
 
-## Features
-- Tweet preprocessing
-- Sentiment classification
-- Data visualization
-- Comparative analysis
-- Word cloud generation
- 30562a3021e509018521c4e7e8aac77a86d6bf8e
+## Results
+
+RoBERTa demonstrated stronger contextual sentiment understanding.
+
+VADER showed faster execution.
+
+---
+
+## Conclusion
+
+RoBERTa achieved superior contextual understanding while VADER provided lightweight sentiment prediction.
